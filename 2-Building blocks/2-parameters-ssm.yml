@@ -14,13 +14,12 @@ Parameters:
   InstanceType:
       Description: WebServer EC2 instance type
       Type: AWS::SSM::Parameter::Value<String>
-      Default: /jjtech/ec2/instancetype     
+      Default: /jjtech/dev/instancetype     
       ConstraintDescription: must be a valid EC2 instance type.
 
   AMIID:
     Description: The EC2 AMI id
-    Type: 'AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>'
-    Default: '/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2'
+    Type: AWS::SSM::Parameter::Value<String>
     ConstraintDescription: Must be a valid AMI based on the region
 
   VolumeSize:

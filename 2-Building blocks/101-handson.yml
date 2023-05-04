@@ -1,0 +1,21 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: CloudFormation template for s3 bucket     
+Resources:
+  InvoiceBucket:
+    Type: AWS::S3::Bucket    
+    Properties:
+      BucketName: magne6478
+Outputs:
+  BucketName:
+    Description: Name of the bucket 
+    Value: !Ref InvoiceBucket 
+    Export:
+      Name: NetflixINvoiceBucket
+Outputs:
+  BucketARN:
+    Description: arn of bucket 
+    Value: !GetAtt 
+      - InvoiceBucket
+      - Arn
+    Export:
+      Name: NetflixInvoiceBucketArn

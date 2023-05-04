@@ -9,8 +9,8 @@ Description: 'Cloudformation template to create EC2 instance'
 Parameters:
   InstanceType:
       Description: WebServer EC2 instance type
-      Type: AWS::SSM::Parameter::Value<String>
-      Default: /jjtech/ec2/instancetype     
+      Type: String 
+      Default: t2.micro     
       ConstraintDescription: must be a valid EC2 instance type.
 
   AMIID:

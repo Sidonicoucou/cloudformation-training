@@ -3,7 +3,7 @@
 # & refer those endpoints while creatint this main template.
 
 AWSTemplateFormatVersion: "2010-09-09"
-Description: Template to create nasted templates
+Description: Template to create nested templates
 
 Parameters:
 
